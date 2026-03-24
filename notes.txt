@@ -1,0 +1,5 @@
+This is a simplified version of the type of visualization work I did.
+
+In the actual project, data came from TI mmWave sensors and went through FFT and detection steps before reaching this stage.
+
+Here I focused only on the visualization part to keep it simple.
