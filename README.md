@@ -1,23 +1,42 @@
 # mmWave Visualization Demo
 
-This is a small example to demonstrate how I typically handle mmWave-style data for visualization.
+This repo is a small reconstruction of the kind of workflow I used in a past project involving mmWave data.
 
-## Overview
+The original project work cannot be shared because of NDA restrictions, so this example focuses on the visualization side and the general processing flow rather than the original implementation.
 
-The goal here is not to replicate a full sensor pipeline, but to show how point cloud data can be generated and visualized in a simple way.
+## Background
 
-## Pipeline (Simplified)
+In that work, I was involved in handling sensor output, processing it into a usable format, and building visualization components so the data could be interpreted in real time.
 
-Raw data → Processing → Point Cloud → Visualization
+This repo is not meant to represent a full production sensor pipeline. It is a simple example that shows the general direction of how point cloud style data can be visualized.
 
-## What this demo shows
+## Simplified Processing Flow
 
-- Basic point cloud generation
-- Mapping values (velocity) to color
-- Simple visualization using matplotlib
+ADC data -> FFT -> Range / Doppler processing -> Detection -> Point Cloud -> Visualization
 
-## Notes
+## What This Demo Includes
 
-This is a simplified example for demonstration purposes only.
+- simple simulated point cloud generation
+- color mapping based on velocity values
+- basic visualization with matplotlib
 
-Original project work was done under NDA, so this is a reconstruction of the approach rather than the original implementation.
+## Why This Repo Exists
+
+I put this together as a practical example of how I think about the visualization side of sensor data.
+
+A lot of the real work in these systems is not just collecting data, but turning it into something that can actually be interpreted and used. That was a big part of the work I did.
+
+## Files
+
+### `mmwave_demo.py`
+A small Python example that generates sample point cloud style data and plots it.
+
+### `notes.txt`
+A short note explaining the context of the demo.
+
+## Running the Demo
+
+Install the dependencies first:
+
+```bash
+pip install numpy matplotlib
